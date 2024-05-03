@@ -17,6 +17,8 @@
 		"prettier": "^3.2.5"
 	},
 	"dependencies": {
-		"express": "^4.19.2"
+		"express": "^4.19.2",
+		"passport": "^0.5.3",
+		"passport-google-oauth20": "^2.0.0"
 	}
 }
