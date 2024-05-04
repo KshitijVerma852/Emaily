@@ -1,4 +1,4 @@
 .idea
 node_modules
 emailySecrets.txt
-keys.js
+dev.js
