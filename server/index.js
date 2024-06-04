@@ -7,10 +7,9 @@ const keys = require("./config/keys");
 require("./models/User");
 require("./services/passport");
 
-mongoose.connect(keys.mongoURI)
-	.then(() => {
-		console.log("Connected to mongo!");
-	});
+mongoose.connect(keys.mongoURI).then(() => {
+	console.log("Connected to mongo!");
+});
 const PORT = process.env.PORT || 5000;
 
 const app = express();
@@ -25,6 +24,15 @@ app.use(
 );
 app.use(passport.initialize());
 app.use(passport.session());
+
+if (process.env.NODE_ENV === "production") {
+	app.use(express.static("client/build"));
+
+	const path = require("path");
+	app.get("*", (req, res) => {
+		res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+	});
+}
 
 require("./routes/authRoutes")(app);
 require("./routes/billingRoutes")(app);
