@@ -12,7 +12,7 @@ class Header extends React.Component {
 			case false:
 				return (
 					<>
-						<li style={{padding: "0 10px"}}>
+						<li style={{ padding: "0 10px" }}>
 							<div style={{ paddingTop: "13px" }}>
 								<a
 									href="/auth/google"
@@ -60,7 +60,7 @@ class Header extends React.Component {
 								</a>
 							</div>
 						</li>
-						<li style={{padding: "0 10px"}}>
+						<li style={{ padding: "0 10px" }}>
 							<div style={{ paddingTop: "13px" }}>
 								<a
 									href="/auth/github"
