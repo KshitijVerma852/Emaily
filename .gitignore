@@ -5,4 +5,4 @@ dev.js
 build
 .run
 diagrams
-*.env*
+.env.development
