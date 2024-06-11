@@ -6,5 +6,7 @@ module.exports = {
 	stripePublishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
 	stripeSecretKey: process.env.STRIPE_SECRET_KEY,
 	githubClientId: process.env.GITHUB_CLIENT_ID,
-	githubSecretKey: process.env.GITHUB_SECRET_KEY
+	githubSecretKey: process.env.GITHUB_SECRET_KEY,
+	mailgunKey: process.env.MAILGUN_KEY,
+	mailgunDomain: process.env.MAILGUN_DOMAIN
 };
