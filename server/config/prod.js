@@ -8,5 +8,6 @@ module.exports = {
 	githubClientId: process.env.GITHUB_CLIENT_ID,
 	githubSecretKey: process.env.GITHUB_SECRET_KEY,
 	mailgunKey: process.env.MAILGUN_KEY,
-	mailgunDomain: process.env.MAILGUN_DOMAIN
+	mailgunDomain: process.env.MAILGUN_DOMAIN,
+	redirectDomain: process.env.REDIRECT_DOMAIN
 };
