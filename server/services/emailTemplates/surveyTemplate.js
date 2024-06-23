@@ -8,8 +8,8 @@ module.exports = survey => {
 					<p>Please answer the following question.</p>
 					<p>${survey.body}</p>
 					<div>
-						<a href="${keys.redirectDomain}/api/survey/thanks" o:tracking-clicks>Yes</a><br>
-						<a href="${keys.redirectDomain}/api/survey/thanks" o:tracking-clicks>No</a>
+						<a href="${keys.redirectDomain}/api/survey/${survey.id}/yes" o:tracking-clicks>Yes</a><br>
+						<a href="${keys.redirectDomain}/api/survey/${survey.id}/no" o:tracking-clicks>No</a>
 					</div>
 				</div>
 			</body>
